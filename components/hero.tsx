@@ -55,7 +55,7 @@ export function Hero() {
             }}
             poster="/modern-salon-interior-with-styling-chairs.jpg"
           >
-            <source src="/Hair Salon BROLL video shot on SONY A7siii 1440P.mp4" type="video/mp4" />
+            <source src="/Hair%20Salon%20BROLL%20video%20shot%20on%20SONY%20A7siii%201440P.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
