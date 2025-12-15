@@ -34,20 +34,30 @@ export function Hero() {
       {/* Video Background */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 w-full h-full overflow-hidden">
-          <iframe
-            src="https://www.youtube.com/embed/RWr8XeBUxTU?autoplay=1&mute=1&loop=1&playlist=RWr8XeBUxTU&controls=0&showinfo=0&autohide=1&modestbranding=1&rel=0&vq=hd1080&iv_load_policy=3"
-            className="absolute inset-0 w-full h-full object-cover scale-110"
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
             style={{
-              width: '100vw',
-              height: '100vh',
+              width: '100%',
+              height: '100%',
+              minHeight: '100vh',
               pointerEvents: 'none',
               transform: 'scale(1.1)',
+              position: 'absolute',
+              top: '0',
+              left: '0',
+              right: '0',
+              bottom: '0',
+              objectFit: 'cover'
             }}
-            allow="autoplay; encrypted-media; fullscreen"
-            allowFullScreen
-            title="Salon Video Background"
-            frameBorder="0"
-          />
+            poster="/modern-salon-interior-with-styling-chairs.jpg"
+          >
+            <source src="/Hair Salon BROLL video shot on SONY A7siii 1440P.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
         
         {/* Video Overlay for Text Readability */}
